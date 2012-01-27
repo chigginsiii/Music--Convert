@@ -1,0 +1,23 @@
+
+Hi.
+
+Currently, this is a perl script I wrote to convert a directory full of oggs to mp3s. Typically, it's too fancy for how narrow the focus is, and it's possible I might wanna go ahead and make it a lib with configurable formats and whatnot. For now, it's just a script to convert oggs to mp3s and bring their tags over.
+
+Required Perl Modules:
+----------------------
+Music::Tag::OGG
+Music::Tag::MP3
+File::Basename
+File::Find
+File::Spec
+File::Path
+Getopt::Long
+Cwd
+
+Required Binaries:
+------------------
+ogg2dec
+lame
+
+Enjoy!
+--Creighton
