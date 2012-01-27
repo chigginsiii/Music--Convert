@@ -52,7 +52,7 @@ sub want_oggs {
         }
 	my $mp3_dirname = File::Spec->catdir(map { clean_filename($_) } $info->artist(), $info->album());
         if ( !$info->track() || !$info->title() ) {
-            print STDERR "Can not find artist or album for $File::Find::name, skipping\n";
+            print STDERR "Can not find track or title for $File::Find::name, skipping\n";
             next;
         }
 	my $mp3_filename = clean_filename( sprintf("%02i - %s.mp3", $info->track, $info->title) );
